@@ -10,3 +10,6 @@ headers = {
 req = requests.get(url, headers=headers)
 src = req.text
 print(src)
+
+with open("index.html", "w", encoding="utf-8") as file:
+    file.write(src)
